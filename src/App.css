@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 6em;
+  color: #4e5756;
+  margin: 10px 0 40px 0;
+}
+
+a {
+  /* color: darkmagenta; */
+  color: #5c9896;
+}
+
+a:hover {
+  color: #a66263;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.searchLink {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+

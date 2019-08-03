@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer h1 {
+    font-family: 'Amatic SC', cursive;
+}
