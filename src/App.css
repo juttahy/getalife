@@ -2,15 +2,7 @@
   text-align: center;
 }
 
-
-h1 {
-  font-size: 6em;
-  color: #4e5756;
-  margin: 10px 0 40px 0;
-}
-
 a {
-  /* color: darkmagenta; */
   color: #5c9896;
 }
 
@@ -21,7 +13,7 @@ a:hover {
 }
 
 .searchLink {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 1.1em;
 }
 

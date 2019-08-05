@@ -8,9 +8,9 @@ const FunList = ({ funs }) => {
     return (
         <div className='flex'>
             {
-                funs.map((user, i) => {
-                    // reactissa komponenteilla pitää olla key jotta react osaa esim. poistaa vain sen komponentin 
-                    // eikä tarvitse ladata koko DOMia uudestaan. Muista tämä. kaarisulkeet alla olevissa koska javascriptiä. 
+                funs.map((element, i) => {
+                    // huom. reactissa komponenteilla pitää olla key jotta react osaa esim. poistaa vain sen komponentin
+                    // koska tätä mahdollisesti tarvitaan myöhemmin, lisäsin sen jo tähän komponenttiin  
                     return (
                         <Fun 
                         key={i} 

@@ -5,29 +5,15 @@ import Random from './components/Random';
 import FunList from './components/FunList';
 import SearchContainer from './components/SearchContainer';
 import SearchField from './components/SearchField';
-import Time from './components/Time';
-import CategoriesSearch from './components/CategoriesSearch';
 import { funs } from './funExample';
-// import SearchContainer from './components/SearchContainer';
-
-/* function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Get a Life</h1>
-        <Random /> 
-      </header>
-      <SearchContainer />
-    </div>
-  );
-} */
+import Footer from './components/Footer';
 
 
 class App extends Component {
   constructor() {
       super()
-      // this.state on se joka muuttuu ohjelmassa dynaamisesti, 
-      // tässä robotti-array (joka aluksi tyhjä) ja hakukenttä
+      // this.state objekti jonka kohtia muutetaan ohjelmassa dynaamisesti
+      // tällä hallitaan fun-listaa ja hakukentän näkyvyyttä
       this.state = {
           funs: [],
           searchvalue: '',
@@ -37,15 +23,7 @@ class App extends Component {
       }
   }
 
-  componentDidMount() {
-      // fetch tekee http-requestin
-      /* fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => {
-          return response.json();
-      })
-      .then(users => {
-          
-      }); */
+  componentDidMount() {      
       this.setState({ funs: funs })
   }
 
@@ -61,24 +39,16 @@ class App extends Component {
     }
   }
 
-  // nimi on keksitty, ei varattu
   onSearchChange = (event) => {
       this.setState({ searchvalue: event.target.value })
   }
 
   onRandomChange = (event) => {
-    
-          function makeRandomId(idArray) {
-        
-            return idArray[Math.floor(Math.random()*idArray.length)];
-                
-        }
-        
-            // let idList = [254, 45, 212, 365, 2543];
+               
+        // muuttuja arraylle johon kerätään id:t arvontaa varten
         let idList = [];
-        console.log(funs[0].id);
-        console.log(funs);
         
+        // funktio jolla luodaan array id:stä
         function makeIdArray() {
             for (let i=0; i<funs.length; i++) {
                 idList.push(funs[i].id);
@@ -87,42 +57,28 @@ class App extends Component {
         }
         
         makeIdArray();
-        console.log(idList);
         
+        // funktio jolla arvotaan random id listasta
+        function makeRandomId(idArray) {        
+          return idArray[Math.floor(Math.random()*idArray.length)];                
+        }
+
         let randomId = makeRandomId(idList);
-        
-        console.log(randomId);
 
         this.setState({ random: randomId, showRandom: true, isHidden: true })
 
   }
 
   render() {
-      
-    // muuttuja randomFun joka ei filtteröi vaan näyttää idn joka random
-    // const randomFun = this.state.funs.id hmm... 
     
     const filteredFuns = this.state.funs.filter(fun => {
         
-          // muuttujat näille: 
-          // fun.name.toLowerCase()
-          // fun.description.toLowerCase()
-          // fun.category.toLowerCase()
-          // fun.duration.toLowerCase()
-          
-          // yhdistä sitten stringit yhdeksi josta haet
-
           const funName = fun.name.toLowerCase();
           const funDescription = fun.description.toLowerCase();
+          // yhdistetään nimi ja kuvaus yhdeksi stringiksi hakua varten
           const funValues = funName.concat(funDescription);
-          // const funId = fun.id;
-
           
-          // if (this.random === funId) {
-           // return funId.includes(this.state.randomId);
-          // }
-          
-            return funValues.includes(this.state.searchvalue.toLowerCase());
+          return funValues.includes(this.state.searchvalue.toLowerCase());
           
       })
     
@@ -140,17 +96,14 @@ class App extends Component {
       displayFuns = filteredFuns;
     }
     
-    // const randomFuns = funs.find(function(element) {
-    //   return element.id === 3;
-    // }); 
 
-
-      // if else sitä varten että kestää kauan ladata, ei muuta syytä! Voi siis jättää pois
+      // if else sitä varten että kestää kauan ladata. Muokkaa myöhemmin paremmaks
       if (this.state.funs.length === 0) {
           return <h1>Loading...</h1>
       }
       else {
           return (
+              
               <div className='container'>
                   
                   <Header />
@@ -164,20 +117,18 @@ class App extends Component {
                       </a>
                       </div>
                     {!this.state.isHidden && 
-                      <SearchContainer>
-                        <SearchField searchChange={this.onSearchChange}/>
-                        {/* <Time />
-                        <CategoriesSearch /> */}
+                      <SearchContainer>                        
+                        <SearchField searchChange={this.onSearchChange}/>                                               
                       </SearchContainer>
                     }
                   </div>
 
-                 { console.log('state random ' + this.state.random) }
+                  <FunList funs={displayFuns}/>
 
-    
-                        <FunList funs={displayFuns}/>
+                  <Footer />
                 
               </div>
+ 
           );
       }
       

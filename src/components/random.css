@@ -1,32 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 
-button {
-  /* background: rgb(194,192,192);
-  background: linear-gradient(90deg, rgba(194,192,192,1) 0%, rgba(216,239,240,1) 26%, rgba(185,215,215,1) 53%, rgba(216,239,240,1) 79%, rgba(194,192,192,1) 100%);
-  */
-  /* background: white url(../images/buttonBg2.jpg) no-repeat top center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
+button {  
   background: rgb(253,183,183);
   background: linear-gradient(90deg, rgba(253,183,183,1) 0%, rgba(251,210,210,1) 48%, rgba(194,192,192,1) 100%);
-  /* background: url(../images/unicorn.png) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
   height: 100%;
-  padding: 10px 30px;
+  padding: 8px 25px;
   border: white solid 3px;
   border-radius: 10px;
   color: white;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: 'Open Sans Condensed', sans-serif;
-  margin: 0 15px;
+  margin: 0;
   cursor: pointer;
 }
-
 
 /* button animaatio random */ 
 @keyframes example {

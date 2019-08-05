@@ -7,4 +7,22 @@
 
 .headerContainer h1 {
     font-family: 'Amatic SC', cursive;
+    font-size: 6em;
+    color: #4e5756;
+    margin: 10px 0 40px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+    .headerContainer img {
+        height: 100px;   
+    }
+
+    .headerContainer h1 {
+        font-size: 4em;
+        margin: 10px 0 20px 0;
+    }
+
 }
