@@ -1,3 +1,5 @@
+// THIS FEATURE IS STILL IN PROGRESS
+
 // Make checkbox list for categories. Dynamically changes the list of funs
 
 import React from 'react';

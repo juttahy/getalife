@@ -1,5 +1,4 @@
 // Random Life Generator -button
-// toiminnallisuus App.js tiedostossa
 // The functionalities are defined in the App.js
 
 import React from 'react';
