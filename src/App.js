@@ -12,8 +12,8 @@ import Footer from './components/Footer';
 class App extends Component {
   constructor() {
       super()
-      // this.state objekti jonka kohtia muutetaan ohjelmassa dynaamisesti
-      // tällä hallitaan fun-listaa ja hakukentän näkyvyyttä
+      // this.state object, changes dynamically
+      // this is used to control the fun list and visibility of the search field
       this.state = {
           funs: [],
           searchvalue: '',
@@ -45,10 +45,10 @@ class App extends Component {
 
   onRandomChange = (event) => {
                
-        // muuttuja arraylle johon kerätään id:t arvontaa varten
+        // variable for the array of id:s to be used in returning random number
         let idList = [];
         
-        // funktio jolla luodaan array id:stä
+        // function for returning the id array
         function makeIdArray() {
             for (let i=0; i<funs.length; i++) {
                 idList.push(funs[i].id);
@@ -58,7 +58,7 @@ class App extends Component {
         
         makeIdArray();
         
-        // funktio jolla arvotaan random id listasta
+        // function for returning random id from the id array
         function makeRandomId(idArray) {        
           return idArray[Math.floor(Math.random()*idArray.length)];                
         }
@@ -75,7 +75,7 @@ class App extends Component {
         
           const funName = fun.name.toLowerCase();
           const funDescription = fun.description.toLowerCase();
-          // yhdistetään nimi ja kuvaus yhdeksi stringiksi hakua varten
+          // combining name and description to one string for the search
           const funValues = funName.concat(funDescription);
           
           return funValues.includes(this.state.searchvalue.toLowerCase());
@@ -83,7 +83,7 @@ class App extends Component {
       })
     
     const randomFuns = this.state.funs.filter(fun => {
-      // palauttaa funin jonka id on sama kuin nykyisen staten random
+      // returns the fun which has the same id as the random id in the current state
       return fun.id === this.state.random;
 
     })
@@ -97,7 +97,8 @@ class App extends Component {
     }
     
 
-      // if else sitä varten että kestää kauan ladata. Muokkaa myöhemmin paremmaks
+      // if else is for those cases when it takes a long time to load the page. 
+      // Make this better later
       if (this.state.funs.length === 0) {
           return <h1>Loading...</h1>
       }

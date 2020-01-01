@@ -1,4 +1,5 @@
-// Etsintäkenttä johon kirjoittamalla Funlist päivittyy dynaamisesti
+// Search field 
+// When the user writes to this search field, the Funlist is updated dynamically
 
 import React from 'react';
 import './searchfield.css';

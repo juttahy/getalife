@@ -1,4 +1,4 @@
-// Lista Fun-komponenteista
+// List of Fun components
 
 import React from 'react';
 import Fun from './Fun';
@@ -9,11 +9,9 @@ const FunList = ({ funs }) => {
         <div className='flex'>
             {
                 funs.map((element, i) => {
-                    // huom. reactissa komponenteilla pitää olla key jotta react osaa esim. poistaa vain sen komponentin
-                    // koska tätä mahdollisesti tarvitaan myöhemmin, lisäsin sen jo tähän komponenttiin  
+                     
                     return (
                         <Fun 
-                        key={i} 
                         id={funs[i].id} 
                         name={funs[i].name} 
                         description={funs[i].description}

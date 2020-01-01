@@ -1,5 +1,6 @@
-// tämä on komponentti, jonka sisälle tulee hakukenttä
-// props.children kertoo että tätä voi käyttää ympäröivänä komponenttina jonka sisällä muita komponentteja
+// This is the container component that will include the search field & other search features
+// props.children enables this to be used as a container element around other components. 
+
 
 import React from 'react';
 import './searchContainer.css';

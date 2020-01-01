@@ -1,5 +1,6 @@
-// Yksittäinen Fun-kortti jossa kuva ja kuvaus. Myöhemmin lisää myös kategoriat/hakusanat ja kesto.
-// Tällä hetkellä haetaan javascript objektista, mutta myöhemmin Drupalista.
+// Individual Fun Card with a picture, name and description. 
+// Later: categories/keywords(?) and duration
+// At the moment imports data from JavaScript file, change this to Drupal
 
 import React from 'react';
 import './fun.css';
