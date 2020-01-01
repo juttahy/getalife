@@ -10,6 +10,7 @@ body {
 }
 
 html { 
+  background-color: #FFDCDC;
   background: url(images/bg3.jpg) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
