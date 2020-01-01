@@ -1,4 +1,4 @@
-// Checkbox-lista josta voi valita useita kategorioita, Funlista päivittyy dynaamisesti
+// Make checkbox list for categories. Dynamically changes the list of funs
 
 import React from 'react';
 
@@ -7,19 +7,19 @@ function CategoriesSearch() {
         <div className='checkboxContainer'>
             <div>
                 <input type='checkbox' id='urheilu' name='urheilu' value='urheilu' /> 
-                <label for='urheilu'> Urheilu</label>
+                <label for='urheilu'> Sports</label>
             </div>
             <div>
                 <input type='checkbox' id='luonto' name='luonto' value='luonto' /> 
-                <label for='luonto'> Luonto</label>
+                <label for='luonto'> Nature</label>
             </div>
             <div>
                 <input type='checkbox' id='viihde' name='viihde' value='viihde' /> 
-                <label for='viihde'> Viihde</label>
+                <label for='viihde'> Entertainment</label>
             </div>
             <div>
                 <input type='checkbox' id='musiikki' name='musiikki' value='musiikki' /> 
-                <label for='musiikki'> Musiikki</label>
+                <label for='musiikki'> Music</label>
             </div>
         </div>
     );

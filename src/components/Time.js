@@ -1,5 +1,5 @@
-// pudotusvalikko josta voi valita Funin keston
-// Tämän perusteella dynaamisesti päivitetään Funlistaa
+// Select list for choosing the duration of the fun.
+// Changes the Funlist dynamically
 
 import React from 'react';
 
