@@ -48,27 +48,27 @@ export const funs = [
       image: 'sup.png'
     },
     {
-        id: 9,
-        name: 'Play with the Dog',
-        description: 'Have fun with your dog. Play, go running to your backyard, hide some treats to your house for him to find. Watch him in the eyes and enjoy the company of your loyal friend.',
-        image: 'dogplay.png'
-      },
+      id: 9,
+      name: 'Play with the Dog',
+      description: 'Have fun with your dog. Play, go running to your backyard, hide some treats to your house for him to find. Watch him in the eyes and enjoy the company of your loyal friend.',
+      image: 'dogplay.png'
+    },
     {
-        id: 10,
-        name: 'Make a Smoothie',
-        description: 'Mix your favourite berries and fruits and make a delicious and refreshing smoothie. Or google some new recipies and enjoy the new flavours.',
-        image: 'smoothie.png'
-      },
-      {
-        id: 11,
-        name: 'Stretching or Yoga',
-        description: 'Being stuck on the computer whole day? Do some stretching or enjoy a yoga session. Try to empty your thoughts and focus just on your breathing.',
-        image: 'yoga.png'
-      },
-      {
-        id: 12,
-        name: 'Swimming',
-        description: 'Just go swimming. You heard it. It doesn\'t matter if it\'s winter or summer, there is always some lake or sea you can swim in. Or if it is too cold (and you are a coward), go to a swimming hall or a spa.',
-        image: 'swimming.png'
-      }
+      id: 10,
+      name: 'Make a Smoothie',
+      description: 'Mix your favourite berries and fruits and make a delicious and refreshing smoothie. Or google some new recipies and enjoy the new flavours.',
+      image: 'smoothie.png'
+    },
+    {
+      id: 11,
+      name: 'Stretching or Yoga',
+      description: 'Being stuck on the computer whole day? Do some stretching or enjoy a yoga session. Try to empty your thoughts and focus just on your breathing.',
+      image: 'yoga.png'
+    },
+    {
+      id: 12,
+      name: 'Swimming',
+      description: 'Just go swimming. You heard it. It doesn\'t matter if it\'s winter or summer, there is always some lake or sea you can swim in. Or if it is too cold (and you are a coward), go to a swimming hall or a spa.',
+      image: 'swimming.png'
+    }
   ];

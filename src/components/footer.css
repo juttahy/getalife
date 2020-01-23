@@ -1,5 +1,5 @@
 .footerContainer {
-    background: rgba(52, 70, 69, 0.6); 
+    background: rgba(52, 70, 69, 0.9); 
     color: white;
     font-size: 1.2em;
     padding: 10px 10px 30px 10px;
@@ -9,6 +9,11 @@
 
 .footerContainer p {
     margin: 5px 0 10px 0;
+}
+
+.footerDescription {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .imageCopyright a {
