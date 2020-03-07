@@ -5,17 +5,15 @@
 import React from 'react';
 import './searchContainer.css';
 
-
 const SearchContainer = (props) => {
-    return (
-        <div className='searchContainer'>
-            <h1>Get some fun to your life</h1>
-            <div className='searchComponents'>
-                {props.children}
-            </div>
-        </div>
-    );
-    
+  return (
+    <div className='searchContainer'>
+      <h1>Get some fun to your life</h1>
+      <div className='searchComponents'>
+        {props.children}
+      </div>
+    </div>
+  ); 
 };
 
 export default SearchContainer;

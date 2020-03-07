@@ -7,15 +7,15 @@ import './fun.css';
 
 const Fun = ({ name, description, id, image }) => {
     
-    return (
-        <div className='funContainer'>
-            <img alt='funs' src={require(`../images/${image}`)} />
-            <div> 
-                <h2>{name}</h2>
-                <p>{description}</p>
-            </div>
-        </div>
-    );
+  return (
+    <div className='funContainer'>
+      <img alt='funs' src={require(`../images/${image}`)} />
+      <div> 
+        <h2>{name}</h2>
+        <p>{description}</p>
+      </div>
+    </div>
+  );
 }
 
 export default Fun;

@@ -6,11 +6,11 @@ import './random.css';
 
 const Random = ({ randomChange }) => {
 
-    return (
-        <div>
-            <button className='random' onClick={randomChange}>Random Life Generator</button>
-        </div>
-    );
+  return (
+    <div>
+      <button className='random' onClick={randomChange}>Random Life Generator</button>
+    </div>
+  );
 }
 
 export default Random;

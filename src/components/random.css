@@ -15,37 +15,37 @@ button {
 }
 
 /* random button animation */ 
-@keyframes example {
-    0% {
+@keyframes randomAnimation {
+  0% {
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari prior 9.0 */
+    transform: rotate(10deg); /* Standard syntax */
+  }
+  25% {
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Safari prior 9.0 */
+    transform: rotate(-10deg); /* Standard syntax */
+  }
+  50% {
       -ms-transform: rotate(10deg); /* IE 9 */
       -webkit-transform: rotate(10deg); /* Safari prior 9.0 */
       transform: rotate(10deg); /* Standard syntax */
-    }
-    25% {
+  }
+  75% {
       -ms-transform: rotate(-10deg); /* IE 9 */
       -webkit-transform: rotate(-10deg); /* Safari prior 9.0 */
       transform: rotate(-10deg); /* Standard syntax */
-    }
-    50% {
-        -ms-transform: rotate(10deg); /* IE 9 */
-        -webkit-transform: rotate(10deg); /* Safari prior 9.0 */
-        transform: rotate(10deg); /* Standard syntax */
-      }
-    75% {
-        -ms-transform: rotate(-10deg); /* IE 9 */
-        -webkit-transform: rotate(-10deg); /* Safari prior 9.0 */
-        transform: rotate(-10deg); /* Standard syntax */
-      }
-    100% {
-        -ms-transform: rotate(0deg); /* IE 9 */
-        -webkit-transform: rotate(0deg); /* Safari prior 9.0 */
-        transform: rotate(0deg); /* Standard syntax */
-    }
   }
+  100% {
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Safari prior 9.0 */
+      transform: rotate(0deg); /* Standard syntax */
+  }
+}
 
-  .random:hover {
-    -webkit-transition: 0.4s; /* Safari */
-    transition: 0.4s;
-    animation-name: example;
-    animation-duration: 1s;
-  }
+.random:hover {
+  -webkit-transition: 0.4s; /* Safari */
+  transition: 0.4s;
+  animation-name: randomAnimation;
+  animation-duration: 1s;
+}
