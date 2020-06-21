@@ -1,6 +1,6 @@
 // Individual Fun Card with a picture, name and description. 
 // Later: categories/keywords(?) and duration
-// At the moment imports data from JavaScript file, change this to Drupal
+// At the moment imports data from JavaScript file, change this to WordPress
 
 import React from 'react';
 import './fun.css';

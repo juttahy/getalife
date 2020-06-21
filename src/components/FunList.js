@@ -12,8 +12,8 @@ const FunList = ({ funs }) => {
               
           return (
             <Fun 
-            id={funs[i].id} 
-            name={funs[i].name} 
+            id={element.id} 
+            name={element.name} 
             description={funs[i].description}
             image={funs[i].image}
             />
