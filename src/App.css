@@ -17,3 +17,17 @@ a:hover {
   font-size: 1.1em;
 }
 
+.link {
+  color: #5c9896;
+  background: none;
+  border: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+.link:hover {
+  color: #a66263;
+  cursor: pointer;
+  text-decoration: underline;
+}

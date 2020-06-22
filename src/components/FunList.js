@@ -12,16 +12,17 @@ const FunList = ({ funs }) => {
               
           return (
             <Fun 
-            id={element.id} 
-            name={element.name} 
-            description={funs[i].description}
-            image={funs[i].image}
+            key={element.id} 
+            name={element.title.rendered} 
+            description={element.activity_description}
+            image={element.activity_image.guid}
             />
           );
         })
       }
     </div>
   );
-}
+} 
+
 
 export default FunList;
