@@ -5,11 +5,11 @@
 import React from 'react';
 import './fun.css';
 
-const Fun = ({ name, description, id, image }) => {
+const Fun = ({ name, description, image }) => {
     
   return (
     <div className='funContainer'>
-      <img alt='funs' src={require(`../images/${image}`)} />
+      <img alt='funs' src={image} />
       <div> 
         <h2>{name}</h2>
         <p>{description}</p>
